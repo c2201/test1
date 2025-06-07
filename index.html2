@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自定义字体示例 - 字制区喜脉喜欢体</title>
+    <style>
+        /* 定义字制区喜脉喜欢体 */
+        @font-face {
+            font-family: 'XimaiFont';
+            src: url('fonts/1.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap; /* 确保文字在字体加载期间可见 */
+        }
+
+        /* 应用自定义字体 */
+        .custom-font {
+            font-family: 'XimaiFont', 'Microsoft YaHei', sans-serif;
+        }
+
+        /* 基础样式 */
+        body {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: #444;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>欢迎使用字制区喜脉喜欢体</h1>
+    <p class="custom-font">这是一段使用"字制区喜脉喜欢体"显示的文字。</p>
+    <p>这是默认字体，用于对比效果。</p>
+    
+    <div class="custom-font">
+        <h2>字体特色展示</h2>
+        <p>该字体具有独特的风格，适合创意设计。</p>
+        <p>1234567890</p>
+        <p>！@#￥%……&*（）</p>
+    </div>
+</body>
+</html>
